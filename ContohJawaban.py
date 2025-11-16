@@ -4,7 +4,7 @@ class Animal(ABC):
     #Contoh class variable
     species_count = 0
 
-    def __init__(self, name, age):
+    def __init__(self, name, age): #kosntruktor
         #Contoh instance variable
         self.name = name
         self.age = age
@@ -41,11 +41,7 @@ class Animal(ABC):
     def __str__(self):
         return f"Animal(name={self.name}, age={self.age})"
 
-
-# ===============================
-#         INHERITANCE
-# ===============================
-
+#contoh inheritance dari kelas Animal
 class Dog(Animal):
     # Polymorphism: implementasi berbeda dari make_sound()
     def make_sound(self):
